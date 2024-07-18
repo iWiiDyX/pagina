@@ -9,7 +9,7 @@ function validateForm(event) {
     } else {
         // Si las credenciales son correctas, redirigir a index.html
         console.log("Credenciales correctas. Redirigiendo...");
-        window.location.href = "index.html";
+        window.location.href = "principal.html";
     }
 }
 
