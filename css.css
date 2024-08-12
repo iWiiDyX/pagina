@@ -3,16 +3,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 105vh;
     margin: 0;
     background-color: #f0f0f0;
-    /* Color de fondo opcional */
-    background-image: url('./img/fondo.jpg');
-    /* Ruta a tu imagen de fondo */
+    background-image: url('./img/8.jpg');
     background-size: cover;
-    /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
     background-position: center;
-    /* Centra la imagen de fondo */
     font-family: "Cookie", cursive;
     font-size: larger;
     font-style: italic;
@@ -34,25 +30,22 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    /* Espacio entre los contenedores */
+
 }
 
 .footer {
     margin-top: 20px;
-    /* Espacio superior para el pie de página */
+
 }
 
 .login {
     text-align: center;
     max-width: 600px;
-    /* Ajusta el ancho máximo según tu preferencia */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
-    /* Color de fondo del contenedor con opacidad */
     border-radius: 8px;
-    /* Borde redondeado para estilizar */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
+
 }
 
 .popup {
@@ -73,4 +66,28 @@ body {
     top: 5px;
     right: 10px;
     cursor: pointer;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 50%;
 }
