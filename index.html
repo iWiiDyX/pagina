@@ -5,15 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
-    <script src="js.js"></script>
+    <script src="js.js" defer></script>
     <title>Login</title>
 </head>
 
 <body>
-    <div class="popup" id="popup">
-        <span class="close" onclick="closePopup()">x</span>
-        Casi pu amorcito cerca es una de las varias formas que le diga jiji <3<br>
-            <button onclick="retryLogin()">Intentar de nuevo</button>
+    <!-- Popup 1: Credenciales incorrectas -->
+    <div class="popup" id="popup1">
+        <span class="close" onclick="closePopup('popup1')">x</span>
+        casi pu amorcito, es una de las tantas formas que le digo pd: el usuario es amorcito <3<br>
+        <button onclick="retryLogin()">Intentar de nuevo</button>
+    </div>
+
+    <!-- Popup 2: Usuario 'amorcito' y contraseña 'minion' -->
+    <div class="popup" id="popup2">
+        <span class="close" onclick="closePopup('popup2')">x</span>
+        La contraseña 'minion' no es válida. <br>
+        <button onclick="retryLogin()">Intentar de nuevo</button>
+    </div>
+
+    <!-- Popup 3: Usuario 'amorcito' y contraseña 'miniña' -->
+    <div class="popup" id="popup3">
+        <span class="close" onclick="closePopup('popup3')">x</span>
+        La contraseña 'miniña' no es válida. <br>
+        <button onclick="retryLogin()">Intentar de nuevo</button>
     </div>
 
     <form class="login" id="loginForm" onsubmit="return validateForm(event)">
@@ -24,5 +39,5 @@
         <button type="submit">Iniciar sesión</button>
     </form>
 </body>
-    
+
 </html>
